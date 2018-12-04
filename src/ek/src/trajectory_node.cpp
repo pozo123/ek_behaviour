@@ -31,6 +31,7 @@ using namespace Eigen;
 
 #define NOROBOTS 5
 //int NOROBOTS;
+//LAlalla hola erick
 
 bool initialize = false;
 //geometry_msgs::Pose2D robot_position;//Hacerlos 5? o un vector?
