@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='ChassisEK'>
+    
+    <!-- <model name='ChassisEK'> -->
+      <link name='chassis'>
+
+        <pose frame=''>0 0 0.1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.075</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry> 
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.08</radius>
+              <length>0.15</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <gravity>true</gravity>
+        <inertial>
+          <pose> 0 0 -.05 0 0 0 </pose>
+          <mass> 2 </mass>
+        </inertial>
+      </link>
+     
+
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
+
+
+    
+

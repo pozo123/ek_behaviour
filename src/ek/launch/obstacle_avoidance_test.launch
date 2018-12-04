@@ -1,0 +1,16 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+<arg name="gui_in" default="true"/>
+<arg name="NOROBOTS" default="2"/>
+  
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+  	<arg name="gui" value="$(arg gui_in)"/>
+
+  	<arg name="verbose" value="true"/>
+    <arg name="world_name" value="$(find ek)/worlds/obstacle_avoidance_test.world"/>
+    <!-- more default parameters can be changed here -->
+  </include>
+  <node pkg="ek" type="trajectory_node" name="trajectory_node" output="screen">
+  	<param name="no_robots" type="int" value="$(arg NOROBOTS)"/>
+  </node><!-- output="screen"/>-->
+</launch>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://EKBot</uri>
+      <pose>2 0 0.004946 0 0 0 </pose>
+      <name>EK1</name>
+    </include>
+    <include>
+      <uri>model://EKBot</uri>
+      <name>EK2</name>
+      <pose>1.2 0.925 0.004946 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://EKBot</uri>
+      <name>EK3</name>
+      <pose>1.2 -0.925 0.004946 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://EKBot</uri>
+      <name>EK4</name>
+      <pose>2.7 1.521 0.004946 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://EKBot</uri>
+      <name>EK5</name>
+      <pose>2.7 -1.521 0.004946 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://RoboCup_Field</uri>
+      <pose>4.5 0 0 0 0 0 </pose>
+    </include>
+  </world>
+</sdf>

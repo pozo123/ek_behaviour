@@ -1,0 +1,192 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+
+  <model name="EKBot">
+    <model name="ChassisEK">
+        <include>
+          <!-- <name>ChassisEK</name> -->
+          <uri>model://ChassisEK</uri>
+          <pose>0 0 0 0 0 0 </pose>
+        </include>
+    </model>
+
+    <model name="OmniWheel1">
+      <include>
+        <!-- <name>OmniWheel1</name> -->
+        <uri>model://Omniwheel_EK</uri>
+      </include>
+      <pose>0.04996 -0.06876 0.04 1.57 0 0.62831 </pose>
+    </model>
+
+    <model name="OmniWheel2">
+      <include>
+        <!-- <name>OmniWheel1</name> -->
+        <uri>model://Omniwheel_EK</uri>
+      </include>
+      <pose>0.04996 0.06876 0.04 1.57 0 2.51327 </pose>
+    </model>
+
+    <model name="OmniWheel3">
+      <include>
+        <!-- <name>OmniWheel1</name> -->
+        <uri>model://Omniwheel_EK</uri>
+      </include>
+      <pose>-0.06316 0.05687 0.04 1.57 0 -2.30383 </pose>
+    </model>
+
+    <model name="OmniWheel4">
+      <include>
+        <!-- <name>OmniWheel1</name> -->
+        <uri>model://Omniwheel_EK</uri>
+      </include>
+      <pose>-0.06316 -0.05687 0.04 1.57 0 -0.837758 </pose>
+    </model>
+
+    <joint name='joint_chassis_omniwheel1' type='revolute'>
+      <parent>ChassisEK::ChassisEK::chassis</parent>
+      <child>OmniWheel1::Omniwheel_EK::axis</child>
+      <pose>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <!-- <use_parent_model_frame>true</use_parent_model_frame> -->
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='joint_chassis_omniwheel2' type='revolute'>
+      <parent>ChassisEK::ChassisEK::chassis</parent>
+      <child>OmniWheel2::Omniwheel_EK::axis</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <!-- <use_parent_model_frame>true</use_parent_model_frame> -->
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='joint_chassis_omniwheel3' type='revolute'>
+      <parent>ChassisEK::ChassisEK::chassis</parent>
+      <child>OmniWheel3::Omniwheel_EK::axis</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <!-- <use_parent_model_frame>true</use_parent_model_frame> -->
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+    <joint name='joint_chassis_omniwheel4' type='revolute'>
+      <parent>ChassisEK::ChassisEK::chassis</parent>
+      <child>OmniWheel4::Omniwheel_EK::axis</child>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <!-- <use_parent_model_frame>true</use_parent_model_frame> -->
+        <limit>
+          <lower>-1.79769e+308</lower>
+          <upper>1.79769e+308</upper>
+          <effort>-1</effort>
+          <velocity>-1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+
+
+
+    <plugin name="test_control" filename="libek_plugin.so">
+      <debug>True</debug>
+    </plugin>
+
+  </model>
+</sdf>
+
+
+    
+
